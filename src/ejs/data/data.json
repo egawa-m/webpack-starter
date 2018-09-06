@@ -1,0 +1,14 @@
+{
+  "list": [
+    {
+      "id": "1",
+      "gid": "g000001",
+      "image": "noimage.png"
+    },
+    {
+      "id": "2",
+      "gid": "g000002",
+      "image": "keyvisual.jpg"
+    }
+  ]
+}

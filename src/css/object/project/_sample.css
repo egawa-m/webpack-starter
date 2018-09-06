@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+:fullscreen a {
+  display: flex
+}
+
+.bg {
+  padding-top: calc(400 / 2200 * 100%);
+  background: url('../img/keyvisual.jpg') 0 0 no-repeat;
+  background-size: contain;
+}
+
+.ico {
+  &--pagetop {
+    @mixin sprite $pagetop, 1;
+  }
+}
+
+/*---------------------------------------------
+* PC
+---------------------------------------------*/
+@media screen and (min-width: $WIDTH_PC) {
+
+  . {
+  }
+
+}
+
+
+/*---------------------------------------------
+* SP
+---------------------------------------------*/
+@media screen and (max-width: $WIDTH_SP) {
+
+  . {
+  }
+
+}

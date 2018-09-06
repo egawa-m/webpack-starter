@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.l-header {
+  background-color: $CLR_BG_WHITE;
+  border-bottom: 1px solid #D4D4D4;
+}
+
+/*---------------------------------------------
+* PC
+---------------------------------------------*/
+@media screen and (min-width: $WIDTH_PC) {
+
+  .l-header {
+  }
+
+}
+
+
+/*---------------------------------------------
+* SP
+---------------------------------------------*/
+@media screen and (max-width: $WIDTH_SP) {
+
+  .l-header {
+  }
+
+}

@@ -1,0 +1,21 @@
+{
+  "extends": ["gnavi", 'plugin:vue/recommended'],
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true
+  },
+  "globals": {
+    "jQuery": true,
+    "$": true,
+    "Vue": true
+  },
+  "rules": {
+    "no-param-reassign": ["error", { "props": false }]
+  }
+}

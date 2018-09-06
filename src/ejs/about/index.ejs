@@ -1,0 +1,23 @@
+<% const rootPath = '../../'; const title = 'About'; -%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<%- include(`../include/_head`, { title, rootPath }) %>
+</head>
+<body>
+<%- include(`../include/_header`, { title, rootPath }) %>
+    <h1 id="msg"><%= title %></h1>
+    <div class="bg"></div>
+    <img src="<%= rootPath %>img/noimage.png" alt="">
+    <img src="<%= rootPath %>img/sns-twitter.svg" alt="" width="150" height ="150">
+    <svg>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../svg/sprite.svg#sns-twitter"></use>
+    </svg>
+<% for(var i=0; i < data.list.length; i++) { -%>
+    <div><%= data.list[i].gid %></div>
+    <img class="js-media-thumbnail" src="<%= rootPath %>img/<%= data.list[i].image %>" alt="" width="" height="">
+<% } -%>
+    <div class="ico ico--pagetop"></div>
+<%- include(`../include/_footer`, { title, rootPath }) %>
+</body>
+</html>

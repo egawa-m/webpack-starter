@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.l-container {
+  background-color: $CLR_BG;
+}
+
+/*---------------------------------------------
+* PC
+---------------------------------------------*/
+@media screen and (min-width: $WIDTH_PC) {
+
+  .l-container {
+    width: $WIDTH_CONTENT_PC;
+    margin: 0 auto;
+  }
+
+}
+
+
+/*---------------------------------------------
+* SP
+---------------------------------------------*/
+@media screen and (max-width: $WIDTH_SP) {
+
+  .l-container {
+    padding: 0 12px;
+  }
+
+}

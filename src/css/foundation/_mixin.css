@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@define-mixin clearfix {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@define-mixin sprite $name, $ratio: 1 {
+  display: block;
+  width: calc($(name)-width / $(ratio));
+  height: calc($(name)-height / $(ratio));
+  background-image: url($(name)-image);
+  background-position: calc($(name)-offset-x / $(ratio)) calc($(name)-offset-y / $(ratio));
+  background-repeat: no-repeat;
+  background-size: calc($(name)-total-width / $(ratio)) calc($(name)-total-height / $(ratio));
+}
+
+@define-mixin img-replace {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@define-mixin arrow $color: $CLR_GRAY, $rotate: -45deg, $size: 10px, $border: 1px {
+  &::after {
+    content: '';
+    width: $size;
+    height: $size;
+    border-right: $border solid $(color);
+    border-bottom: $border solid $(color);
+    transform: rotate($(rotate));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+@define-mixin arrow_before $color: $CLR_GRAY, $rotate: 135deg, $size: 10px, $border: 2px {
+  &::before {
+    content: '';
+    width: $size;
+    height: $size;
+    border-right: $border solid $(color);
+    border-bottom: $border solid $(color);
+    transform: rotate($(rotate));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}

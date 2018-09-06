@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.c-loader {
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: auto;
+  animation: load 1.3s infinite linear, fade 0 ease;
+}
+
+/*---------------------------------------------
+* PC
+---------------------------------------------*/
+@media screen and (min-width: $WIDTH_PC) {
+
+  .c-loader {
+    font-size: 8px;
+    width: 1em;
+    height: 1em;
+  }
+}
+
+
+/*---------------------------------------------
+* SP
+---------------------------------------------*/
+@media screen and (max-width: $WIDTH_SP) {
+
+  .c-loader {
+    width: 1em;
+    height: 1em;
+  }
+}
